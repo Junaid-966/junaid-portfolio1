@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio| junaid</title>
+    <link rel="stylesheet" href="portfolio1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <header>
+        <h1><span>J</span>unaid.</h1>
+        <div id="header">
+            <h1>Hay, I'm <span>Junaid</span> </h1>
+            <p>Computer Science student | Web Designer</p>
+            <nav> 
+                 <ul id="side-menu">
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">services</a></li>
+                        <li><a href="#">projects</a></li>
+                        <li><a href="#">contact</a></li>
+                       
+                </ul>
+            </nav>
+        </div>
+        
+        
+    </header>
+    <section id="about">
+        <div class="about-col">
+            <h1 class="sub-tittle">About Me</h1>
+            <p>I am a 2nd-year Bsc computer science student at blossom arts & science collage kondotty.I love designing web pages and learning about AI technologies. i am passionate about coding and solving real-life problems.</p>
+            <div class="tab-tittles">
+                <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                <p class="tab-links"onclick="opentab('Education')">Education</p>
+                <p class="tab-links"onclick="opentab('languages')">languages</p>
+
+            </div>
+            <div class="tab-contents active-tab"id="skills">
+                <ul>
+                    <li><span>UI/UX</span><br>designing web/app interfaces</li>
+                    <li><span>web development</span><br>web/app development</li>
+                    <li><span>app development</span><br>building android/ios apps</li>
+                </ul>
+            </div>
+            <div class="tab-contents"id="Education">
+                <ul>
+                    <li><span>2020</span><br>SSLC G.H.S.S Thadathilparamba </li>
+                    <li><span>2020-2022</span><br>Higher Secondary,Sciense , G.H.S.S Thadathilparamba</li>
+                    <li><span>2023-2026</span><br>BSC Computer Science, blossom arts & science collage,kondotty</li>
+                </ul>
+            </div>
+            <div class="tab-contents"id="languages" >
+                <ul>
+                    <li>English</li>
+                   <li>Malayalam</li>
+                   <li>Hindi</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <section id="projects">
+        <div class="contaner">
+            <h1 class="sub-tittle">my work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work1.jpeg" alt="">
+                    <div class="layer">
+                        <h3>social media app</h3>
+                        <p>A social networking service that is growing to become one of the best social media apps for chatting with its headquarters in Bangalore</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work2.jpeg" alt="">
+                    <div class="layer">
+                        <h3>portfolio </h3>
+                        <p>A social networking service that is growing to become one of the best social media apps for chatting with its headquarters in Bangalore</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work3.jpeg" alt="">
+                    <div class="layer">
+                        <h3>online shopping app</h3>
+                        <p>A social networking service that is growing to become one of the best social media apps for chatting with its headquarters in Bangalore</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">see more</a>
+        </div>
+
+    </section>
+    <section id="contact">
+        <div class="contact-section">
+            <h1 class="sub-tittle">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> contact@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            
+        </div>
+
+    </section>
+    <footer>
+        &copy; 2025 muhammed junaid | Made with <i class="fa-solid fa-heart"></i> 
+     </footer>
+
+    <script>
+        var tablinks=document.getElementsByClassName('tab-links');
+var tabcontents=document.getElementsByClassName('tab-contents');
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+    </script>
+    
+</body>
+</html>
